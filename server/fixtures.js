@@ -54,4 +54,6 @@ if (Posts.find().count() === 0) {
     submitted: new Date(now - 12 * 3600 * 1000),
     commentsCount: 0
   });
+
+  Accounts.createUser({ username: "Admin", password: "password"});
 }
